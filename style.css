@@ -6,6 +6,26 @@ body {
 
 .recipeheading {
     font-family: 'Dancing Script', cursive;
+    position: relative; /*top-right-bottom-left*/
+    animation: header;
+    animation-duration: 5s;
+}
+
+@keyframes header {
+    0% {top: -250px}
+    100% {top: 0}
+}
+
+.heading2 {
+    font-family: 'Dancing Script', cursive;
+    animation: heading2;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes heading2 {
+    0% {right: -1000px}
+    100% {right: 0}
 }
 
 .pilt {
@@ -13,6 +33,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    animation: pilt;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes pilt {
+    0% {left: -1000px;}
+    100% {left: 0;}
 }
 
 .ingredients {
